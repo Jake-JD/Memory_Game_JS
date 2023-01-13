@@ -1,0 +1,77 @@
+*
+{
+    font-size: 80px;
+}
+body
+{
+    margin: 0;
+    margin-top: 30px;
+}
+button
+{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+}
+button:active
+{
+    
+    border-color: aqua;
+    border-width: 10px;
+}
+/* undo the styling below to make the button disabled effect disappear */
+/* button:disabled
+{
+    color: unset;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    /* row-gap: 5px; */
+}
+
+.left
+{
+    align-items: center;
+    grid-column: 3 / span 4;
+}
+
+.right
+{
+    align-items: center;
+    grid-column: 7 / span 4;
+}
+
+#btnRed
+{
+    background-color: red;
+}
+
+#btnBlue
+{
+    background-color: blue;
+}
+
+#btnYellow
+{
+    background-color: yellow;
+}
+
+#btnGreen
+{
+    background-color: green;
+}
+
+
+#btnRestart
+{
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    grid-column: span 2;
+}
+h1
+{
+    text-align: center;
+}

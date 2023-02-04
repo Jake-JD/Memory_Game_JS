@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+body
+{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    margin-top: 30px;
+    background-color: #000f13;
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1400px;
+}
+button
+{
+    font-size: 80px;
+    height: 450px;
+    width: 450px;
+    cursor: pointer;
+}
+button:active
+{
+    
+    border-color: aqua;
+    border-width: 10px;
+}
+/* undo the styling below to make the button disabled effect disappear */
+/* button:disabled
+{
+    color: unset;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    /* row-gap: 5px; */
+}
+
+.left
+{
+    align-items: center;
+    grid-column: 3 / span 4;
+}
+
+.right
+{
+    padding: 0px;
+    align-items: center;
+    grid-column: 7 / span 4;
+}
+
+#btnRed
+{
+    background-color: red;
+}
+
+#btnBlue
+{
+    background-color: blue;
+}
+
+#btnYellow
+{
+    background-color: yellow;
+}
+
+#btnGreen
+{
+    background-color: green;
+}
+
+.scoreboard
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    grid-column: span 12;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.record
+{
+    font-size: 40px;
+    /* background-color: aqua; */
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    grid-column: 3 / span 4;
+}
+
+.record1
+{
+    /* background-color: aqua; */
+    text-align: center;
+    align-items: center;
+    grid-column: 7 / span 4;
+}
+
+.record1 button
+{
+    font-size: 30px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+}
